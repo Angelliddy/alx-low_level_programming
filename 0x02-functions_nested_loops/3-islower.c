@@ -1,19 +1,12 @@
-#ifndef main_h
-#define main_h
+#include "main.h"
 
-void print_alphabet(void);
-void print_alphabet_x10(void);
-int _islower(int c);
-int _isalpha(int c);
-int print_sign(int n);
-int _abs(int);
-int print_last_digit(int);
-void jack_bauer(void);
-void times_table(void);
-int add(int, int);
-void print_to_98(int n);
-void print_times_table(int n);
-int _putchar(char c);
+/**
+ * _islower - checks for lowercase character
+ *@c: the character to be check
+ * Return: 1 if c is lowercase, 0 otherwise
+ */
+int _islower(int c)
+{
+	return (c >= 'a' && c <= 'z');
 
-#endif
-
+}
